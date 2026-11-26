@@ -5,7 +5,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parents[1]
 CAMINHO_BANCO = Path(os.environ.get(
-    "UC13_DB_PATH", str(RAIZ / "dados" / "eventos_arquivo.db")
+    "UC13_DB_PATH", str(RAIZ / "dados" / "eventos.db")
 ))
 
 def conectar():
