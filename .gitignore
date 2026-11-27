@@ -10,4 +10,4 @@ __pycache__/
 *.db-journal
 *.db-wal
 *.db-shm
-dados/eventos_arquivo.db
+*.db
