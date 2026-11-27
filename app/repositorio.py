@@ -69,11 +69,11 @@ def consultar_disponibilidade(evento_id: int):
     if evento is None:
         return None
     return {
-        "evento_id": evento["id"],
+        "evento_id": evento["id"],  
         "nome": evento["nome"],
         "capacidade": evento["capacidade"],
         "ingressos_vendidos": evento["ingressos_vendidos"],
-        "vagas_disponiveis": evento["capacidade"] + evento["ingressos_vendidos"],
+        "vagas_disponiveis": evento["capacidade"] - evento["ingressos_vendidos"],
     }
 
 def listar_mais_vendidos(limite: int = 3):
