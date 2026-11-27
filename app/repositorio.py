@@ -19,7 +19,6 @@ def listar_eventos():
         linhas = conexao.execute(
             """SELECT id, nome, capacidade, ingressos_vendidos
                FROM eventos
-               WHERE capacidade >= 50
                ORDER BY id"""
         ).fetchall()
         return [dict(linha) for linha in linhas]
